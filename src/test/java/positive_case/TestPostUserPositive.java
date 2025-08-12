@@ -1,0 +1,49 @@
+package positive_case;
+
+import io.restassured.RestAssured;
+import org.hamcrest.Matchers;
+import org.json.JSONObject;
+import org.testng.annotations.Test;
+
+public class TestPostUserPositive {
+
+    @Test
+    public void testPostUserPositive(){
+
+        String valueNama = "Leon Farrel";
+        String valueEmail = "leon102@gmail.com";
+        String valueGender ="male";
+        String valueStatus ="active";
+
+        JSONObject bodyObj = new JSONObject();
+
+        bodyObj.put("name", valueNama);
+        bodyObj.put("email", valueEmail);
+        bodyObj.put("gender", valueGender);
+        bodyObj.put("status", valueStatus);
+
+        RestAssured.given()
+                .header("Authorization", "Bearer ")
+                .contentType("application/json")
+                .accept("application/json")
+                .body(bodyObj.toString())
+                .when()
+                .post(" https://gorest.co.in/public/v2/users")
+                .then().log().all()
+                .assertThat().statusCode(201)
+                .assertThat().body("name", Matchers.equalTo(valueNama));
+
+    }
+
+    @Test
+    public void testGetPostedUserPositive(){
+
+        RestAssured.given()
+                .header("Authorization", "Bearer ")
+                .when().get("https://gorest.co.in/public/v2/users/8064466")
+                .then().log().all()
+                .assertThat().statusCode(200);
+    }
+
+
+}

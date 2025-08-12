@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PR 18 Module 20">
+    <test name="Positive">
+        <classes>
+            <class name= "positive_case.TestGetUserPositive"/>
+            <class name= "positive_case.TestPostUserPositive"/>
+            <class name= "positive_case.TestPutUserPositive"/>
+            <class name= "positive_case.TestPatchUserPositive"/>
+            <class name= "positive_case.TestDeleteUserPositive"/>
+        </classes>
+    </test>
+
+    <test name="Negative">
+        <classes>
+            <class name="negative_case.TestGetUserNegative"/>
+            <class name ="negative_case.TestPostUserNegative"/>
+            <class name ="negative_case.TestPutUserNegative"/>
+            <class name ="negative_case.TestPatchUserNegative"/>
+            <class name="negative_case.TestDeleteUserNegative"/>
+        </classes>
+    </test>
+</suite>
