@@ -4,16 +4,16 @@ This project is an implementation of API Automation Testing using a modern frame
 
 ## 📌 Project Overview
 
-Testing Framework: TestNG
+- Testing Framework: TestNG
 
 Used for structuring, managing, and running test cases.
 
-HTTP Library: REST Assured
+- HTTP Library: REST Assured
 
 Used for sending API requests and validating responses (GET, POST, PUT, PATCH, DELETE).
 
-Rest API: Go REST
+- Rest API: Go REST
 
 A public API used as the testing target.
 
-Test Report: Allure Report
+- Test Report: Allure Report
