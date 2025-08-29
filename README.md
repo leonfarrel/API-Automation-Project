@@ -1,8 +1,8 @@
-##🚀 Automation Project
+## 🚀 Automation Project
 
 This project is an implementation of API Automation Testing using a modern framework and tools to ensure API quality through automated testing.
 
-##📌 Project Overview
+## 📌 Project Overview
 
 Testing Framework: TestNG
 
