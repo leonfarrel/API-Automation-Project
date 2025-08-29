@@ -1,21 +1,19 @@
-🚀 API Automation Project
+##🚀 Automation Project
 
-Project ini merupakan implementasi API Automation Testing menggunakan kombinasi framework dan tools modern untuk memastikan kualitas API melalui pengujian otomatis.
+This project is an implementation of API Automation Testing using a modern framework and tools to ensure API quality through automated testing.
 
-📌 Project Overview
+##📌 Project Overview
 
 Testing Framework: TestNG
 
-Digunakan untuk mengatur struktur test, menjalankan test case, serta menghasilkan laporan eksekusi.
+Used for structuring, managing, and running test cases.
 
 HTTP Library: REST Assured
 
-Digunakan untuk melakukan request dan validasi response API (GET, POST, PUT, PATCH, DELETE).
+Used for sending API requests and validating responses (GET, POST, PUT, PATCH, DELETE).
 
 Rest API: Go REST
 
-API publik yang digunakan sebagai target pengujian.
+A public API used as the testing target.
 
 Test Report: Allure Report
-
-Digunakan untuk membuat laporan hasil pengujian yang interaktif dan mudah dipahami.
