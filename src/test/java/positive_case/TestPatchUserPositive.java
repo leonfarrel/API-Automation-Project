@@ -8,7 +8,7 @@ public class TestPatchUserPositive {
 
     @Test
     public void testPatchUserPositive(){
-        String updateName = "Leon QA Engineer";
+        String updateName = "Leon The QA Engineer";
 
         JSONObject bodyObj = new JSONObject();
 
@@ -20,7 +20,7 @@ public class TestPatchUserPositive {
                 .accept("application/json")
                 .body(bodyObj.toString())
                 .when()
-                .patch("https://gorest.co.in/public/v2/users/8098387")
+                .patch("https://gorest.co.in/public/v2/users/8098381")
                 .then().log().all()
                 .assertThat().statusCode(200);
     }
