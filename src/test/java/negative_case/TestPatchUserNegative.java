@@ -22,7 +22,7 @@ public class TestPatchUserNegative {
                 .accept("application/json")
                 .body(bodyObj.toString())
                 .when()
-                .patch("https://gorest.co.in/public/v2/users/8097968")
+                .patch("https://gorest.co.in/public/v2/users/8098771")
                 .then().log().all()
                 .assertThat().statusCode(422)
                 .assertThat().body("field", Matchers.contains("name"))
