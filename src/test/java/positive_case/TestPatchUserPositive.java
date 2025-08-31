@@ -20,7 +20,7 @@ public class TestPatchUserPositive {
                 .accept("application/json")
                 .body(bodyObj.toString())
                 .when()
-                .patch("https://gorest.co.in/public/v2/users/8098381")
+                .patch("https://gorest.co.in/public/v2/users/8097968")
                 .then().log().all()
                 .assertThat().statusCode(200);
     }
