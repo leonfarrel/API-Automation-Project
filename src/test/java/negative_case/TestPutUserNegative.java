@@ -56,7 +56,7 @@ public class TestPutUserNegative {
                 .accept("application/json")
                 .body(bodyObj.toString())
                 .when()
-                .put("https://gorest.co.in/public/v2/users/8064437")
+                .put("https://gorest.co.in/public/v2/users/8098381")
                 .then().log().all()
                 .assertThat().statusCode(422)
                 .assertThat().body("field", Matchers.containsInAnyOrder("email", "name", "gender", "status"))

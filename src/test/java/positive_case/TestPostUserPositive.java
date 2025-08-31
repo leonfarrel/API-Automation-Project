@@ -11,7 +11,7 @@ public class TestPostUserPositive {
     public void testPostUserPositive(){
 
         String valueNama = "Leon Farrel";
-        String valueEmail = "leon103@gmail.com";
+        String valueEmail = "leon105@gmail.com";
         String valueGender ="male";
         String valueStatus ="active";
 
