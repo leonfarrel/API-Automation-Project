@@ -27,7 +27,7 @@ public class TestPutUserPositive {
                 .accept("application/json")
                 .body(bodyObj.toString())
                 .when()
-                .put("https://gorest.co.in/public/v2/users/8098386")
+                .put("https://gorest.co.in/public/v2/users/8097968")
                 .then().log().all()
                 .assertThat().statusCode(200);
     }
