@@ -24,7 +24,7 @@ public class TestPostUserNegative {
 
         RestAssured
                 .given()
-                .header("Authorization", "Bearer ")
+                .header("Authorization", "Bearer 3df5a19b9214fbbfa6746286a8f7ea655592fa87c5b55d1b09b2ff7c7732bd7a")
                 .contentType("application/json")
                 .accept("application/json")
                 .body(bodyObj.toString())
@@ -53,7 +53,7 @@ public class TestPostUserNegative {
         bodyObj.put("status", valueStatus);
 
         RestAssured.given()
-                .header("Authorization", "Bearer ")
+                .header("Authorization", "Bearer 3df5a19b9214fbbfa6746286a8f7ea655592fa87c5b55d1b09b2ff7c7732bd7a")
                 .contentType("application/json")
                 .accept("application/json")
                 .body(bodyObj.toString())
