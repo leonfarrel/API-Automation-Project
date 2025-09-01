@@ -20,7 +20,7 @@ public class TestGetUserPositive {
     public void testGetSpecificUserPositive(){
 
         RestAssured
-                .given().when().get("https://gorest.co.in/public/v2/users/8097968").then().log().all()
+                .given().when().get("https://gorest.co.in/public/v2/users/8100528").then().log().all()
                 .assertThat().statusCode(200);
     }
 }
