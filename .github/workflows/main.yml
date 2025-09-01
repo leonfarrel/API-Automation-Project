@@ -27,11 +27,17 @@ jobs:
       # Excute Gradle Command for running cucumber test
     - name: Execute Test
       run: ./gradlew clean test
-      
+
+      # Install Allure CLI & Generate Allure Report
+    - name: Generate Allure Report
+      run: |
+        npm install -g allure-commandline --save-dev
+        allure generate build/allure-results --clean -o build/allure-report
+
  # Upload Test Report as Artifact
     - name: Upload Test Report
       uses: actions/upload-artifact@v4
       with:
-        name: cucumber-report
-        path: build/reports/cucumber/
+        name: allure-report
+        path: build/allure-report/
   
